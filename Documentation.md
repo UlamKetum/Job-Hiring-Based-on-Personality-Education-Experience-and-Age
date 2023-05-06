@@ -37,9 +37,11 @@ To deploy the Decision Tree Classifier model for job hiring based on personality
 2. Load the datasets – Import the necessary libraries and load the datasets that have been downloaded and read it using pd.read_excel(file_path). ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy2.png)
 3. Data Preparation
 	1. Drop unwanted columns 
+
 	![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy3i.png)
 	
 	2. Feature Selection
+
 	![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy3ii.png)
 4. Define hyperparameter for search over to increase the model accuracy ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy4.png)
 5. Split the data – Split the dataset into training and testing data using the train_test_split() function from the scikit-learn library. 
