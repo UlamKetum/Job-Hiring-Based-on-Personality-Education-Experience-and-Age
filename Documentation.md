@@ -64,11 +64,11 @@ Our model used dataset from Mendeley Data named the data of HEXACO personality t
 19) Offer1-Offer2: Recruiter will give candidates scale from 1-5 how likely they will get a job offer.
 
 Scale:
-	1: Strongly Disagree
-	2: Disagree
-	3: Neutral
-	4: Agree
-	5: Strongly Agree 
+* 1: Strongly Disagree
+* 2: Disagree
+* 3: Neutral
+* 4: Agree
+* 5: Strongly Agree 
 The target variable is Offer1-Offer2, indicating whether or not the applicant was offered a job. The decision tree classifier will use the other 92 features to predict whether or not an applicant will be offered a job based on their personality, education, experience, and age
 
 ## Data Preparation
