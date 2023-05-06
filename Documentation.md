@@ -68,7 +68,8 @@ Scale:
 * 2: Disagree
 * 3: Neutral
 * 4: Agree
-* 5: Strongly Agree 
+* 5: Strongly Agree
+
 The target variable is Offer1-Offer2, indicating whether or not the applicant was offered a job. The decision tree classifier will use the other 92 features to predict whether or not an applicant will be offered a job based on their personality, education, experience, and age
 
 ## Data Preparation
