@@ -30,45 +30,45 @@ Our AI model, which was trained to find patterns and correlations between many e
 
 ## How to Deploy Model
 To deploy the Decision Tree Classifier model for job hiring based on personality, education, experience, and age, you will need to prepare the environment, load the dataset, split the data, train the model, test the model, save the model, and deploy the model in a way that suits your requirements.
-1.Prepare Environment – For our model, we use Google Collab as IDE.
-2.Load the datasets – Import the necessary libraries and load the datasets that have been downloaded and read it using pd.read_excel(file_path).
-3.Data Preparation
-	1.Drop unwanted columns 
-	2.Feature Selection
-4.Define hyperparameter for search over to increase the model accuracy
-5.Split the data – Split the dataset into training and testing data using the train_test_split() function from the scikit-learn library.
-6.Train the model – Create an instance of the DecisionTreeClassifier class from the scikit-learn library and fit the training data to the model using the fit() function. 
-7.Test the model – Test the trained model on the testing data using the predict() function and evaluate the model's performance using metrics such as accuracy, precision, recall, and F1-score.
+1. Prepare Environment – For our model, we use Google Collab as IDE.
+2. Load the datasets – Import the necessary libraries and load the datasets that have been downloaded and read it using pd.read_excel(file_path).
+3. Data Preparation
+	1. Drop unwanted columns 
+	2. Feature Selection
+4. Define hyperparameter for search over to increase the model accuracy
+5. Split the data – Split the dataset into training and testing data using the train_test_split() function from the scikit-learn library.
+6. Train the model – Create an instance of the DecisionTreeClassifier class from the scikit-learn library and fit the training data to the model using the fit() function. 
+7. Test the model – Test the trained model on the testing data using the predict() function and evaluate the model's performance using metrics such as accuracy, precision, recall, and F1-score.
 Result : 
 
 ## Used dataset
 Our model used dataset from Mendeley Data named the data of HEXACO personality traits and job search outcomes that you can find it in https://data.mendeley.com/datasets/p9hwfmfcz5/3 . The data size is collected from 773 Vietnamese university undergraduate. The dataset consists of 93 columns, each representing a different feature. The features are:
-1)Gender: 1 for Male and 2 for Female. 
-2)Married: 1 for Yes and 2 for No
-3)Age: 1 for between 20-21, 2 for between 22-23, 3 for between 24-25, 5 for above 25
-4)Qualifications: 1 for finance, 2 for business, 3 for accounting, 4 for engineering, 5 for other.
-5)Experience: 1 for under 1 year, 2 for 1-2 years, 3 for over 2 years.
-6)Honesty1-Honesty10: Survey questions asking the applicant to rate themselves on 1-5 scale how honest they are.
-7)Emotion1-Emotion8: Survey questions asking the applicant to rate themselves on 1-5 scale how good they are in handling their emotion.
-8)Extravert2-Extravert10: Survey questions asking the applicant to rate themselves on 1-5 scale how extroverted they are.
-9)Agreeable1-Agreeable10: Survey questions asking the applicant to rate themselves on 1-5 scale how agreeable they are.
-10)Conscientious1-Conscientious8: Survey question asking the applicant to rate themselves on 1-8 scale how careful attention to detail, thoroughness, and a strong work ethic they are
-11)Openness1-Openness10: Survey questions asking the applicant to rate themselves on a 1-5 scale on how open-minded they are
-12)Clarity1-Clarity4: Survey questions asking the applicant to rate themselves on a 1-5 scale on how clear their communication is
-13)Size1-Size4: Survey questions asking the applicant to rate themselves on a 1-5 scale on how well they work in different team sizes
-14)Strength1-Strength3: Survey questions asking the applicant to rate themselves on a 1-5 scale on their personal strengths
-15)Comfort1-Comfort6: Survey questions asking the applicant to rate themselves on a 1-5 scale on how comfortable they are in different situations
-16)Proactive1-Proactive10: Survey questions asking the applicant to rate themselves on a 1-5 scale on how proactive they are
-17)Behavior1-Behavior5: Survey questions asking the applicant to rate themselves on a 1-5 scale on how they would behave in different situations
-18)Interview1-Interview2: Survey questions asking the applicant to rate how they felt about the interview process
-19)Offer1-Offer2: Recruiter will give candidates scale from 1-5 how likely they will get a job offer.
+1) Gender: 1 for Male and 2 for Female. 
+2) Married: 1 for Yes and 2 for No
+3) Age: 1 for between 20-21, 2 for between 22-23, 3 for between 24-25, 5 for above 25
+4) Qualifications: 1 for finance, 2 for business, 3 for accounting, 4 for engineering, 5 for other.
+5) Experience: 1 for under 1 year, 2 for 1-2 years, 3 for over 2 years.
+6) Honesty1-Honesty10: Survey questions asking the applicant to rate themselves on 1-5 scale how honest they are.
+7) Emotion1-Emotion8: Survey questions asking the applicant to rate themselves on 1-5 scale how good they are in handling their emotion.
+8) Extravert2-Extravert10: Survey questions asking the applicant to rate themselves on 1-5 scale how extroverted they are.
+9) Agreeable1-Agreeable10: Survey questions asking the applicant to rate themselves on 1-5 scale how agreeable they are.
+10) Conscientious1-Conscientious8: Survey question asking the applicant to rate themselves on 1-8 scale how careful attention to detail, thoroughness, and a strong work ethic they are
+11) Openness1-Openness10: Survey questions asking the applicant to rate themselves on a 1-5 scale on how open-minded they are
+12) Clarity1-Clarity4: Survey questions asking the applicant to rate themselves on a 1-5 scale on how clear their communication is
+13) Size1-Size4: Survey questions asking the applicant to rate themselves on a 1-5 scale on how well they work in different team sizes
+14) Strength1-Strength3: Survey questions asking the applicant to rate themselves on a 1-5 scale on their personal strengths
+15) Comfort1-Comfort6: Survey questions asking the applicant to rate themselves on a 1-5 scale on how comfortable they are in different situations
+16) Proactive1-Proactive10: Survey questions asking the applicant to rate themselves on a 1-5 scale on how proactive they are
+17) Behavior1-Behavior5: Survey questions asking the applicant to rate themselves on a 1-5 scale on how they would behave in different situations
+18) Interview1-Interview2: Survey questions asking the applicant to rate how they felt about the interview process
+19) Offer1-Offer2: Recruiter will give candidates scale from 1-5 how likely they will get a job offer.
 
 Scale:
-1: Strongly Disagree
-2: Disagree
-3: Neutral
-4: Agree
-5: Strongly Agree 
+	1: Strongly Disagree
+	2: Disagree
+	3: Neutral
+	4: Agree
+	5: Strongly Agree 
 The target variable is Offer1-Offer2, indicating whether or not the applicant was offered a job. The decision tree classifier will use the other 92 features to predict whether or not an applicant will be offered a job based on their personality, education, experience, and age
 
 ## Data Preparation
@@ -76,21 +76,21 @@ The dataset then being checked for any null or wrong format cell.
  
 Figure above shows the data is complete, no null value, every cell is in integer value, and after thorough data view by researchers every cell holds a value that are in scale of the description from data collector.
 	Researchers then find the average or mean for each category of personality and change and new columns for average of each category in the dataset. The new column are such.
-1)Ahonesty: Average of Honesty1-Honesty10
-2)Aemotion: Average of Emotion1-Emotion8
-3)Aextravert: Average of Extravert2-Extravert10
-4)Aagreeable: Average of Agreeable1-Agreeable10
-5)Aconscientious: Average of Conscientious1-Conscientious8
-6)Aopenness: Average of Openness1-Openness10
-7)Aclarity: Average of Clarity1-Clarity4
-8)Asize: Average of Size1-Size4
-9)Astrength: Average of Strength1-Strength3
-10)Acomfort: Average of Comfort1-Comfort6
-11)Aproactive: Average of Proactive1-Proactive10
-12)Abehavior: Average of Behavior1-Behavior5
-13)Ainterview: Average of Interview1-Interview2
-14)Aoffer: Average of Offer1-Offer2
-15)Classification : If Aoffer is 4 and above then Classification set as High, else Low. Meaning high probability of being offer a job and low probability of being offer a job.
+1) Ahonesty: Average of Honesty1-Honesty10
+2) Aemotion: Average of Emotion1-Emotion8
+3) Aextravert: Average of Extravert2-Extravert10
+4) Aagreeable: Average of Agreeable1-Agreeable10
+5) Aconscientious: Average of Conscientious1-Conscientious8
+6) Aopenness: Average of Openness1-Openness10
+7) Aclarity: Average of Clarity1-Clarity4
+8) Asize: Average of Size1-Size4
+9) Astrength: Average of Strength1-Strength3
+10) Acomfort: Average of Comfort1-Comfort6
+11) Aproactive: Average of Proactive1-Proactive10
+12) Abehavior: Average of Behavior1-Behavior5
+13) Ainterview: Average of Interview1-Interview2
+14) Aoffer: Average of Offer1-Offer2
+15) Classification : If Aoffer is 4 and above then Classification set as High, else Low. Meaning high probability of being offer a job and low probability of being offer a job.
 
 ## Tools
 Google collab as our IDE in running model
