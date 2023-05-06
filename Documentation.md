@@ -1,6 +1,9 @@
 # Job-Hiring-Based-on-Personality-Education-Experience-and-Age
 Supervised Learning: Decision Tree Classifier on topic Job Hiring Based on Personality, Education, Experience and Age
 
+- [Introduction](#introduction)
+
+
 ## Introduction
 Employers are continually seeking for methods to streamline their hiring procedures and find the best applicants for their organisations in today's fast-paced and ever-changing employment market. Our AI model makes use of the most recent developments in machine learning and natural language processing to analyse a candidate's personality traits, educational history, professional experience, and age and offer insightful information about their fit for a given post.
 Employers may analyse a big pool of candidates fast and correctly using our AI model, and then decide who to invite for interviews or offer employment openings based on data. As the AI model employs objective criteria to evaluate each candidate, this not only saves time and money but also assures that the recruiting process is fair and impartial.
