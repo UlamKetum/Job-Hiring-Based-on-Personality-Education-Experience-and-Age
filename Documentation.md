@@ -33,16 +33,17 @@ Our AI model, which was trained to find patterns and correlations between many e
 
 ## How to Deploy Model
 To deploy the Decision Tree Classifier model for job hiring based on personality, education, experience, and age, you will need to prepare the environment, load the dataset, split the data, train the model, test the model, save the model, and deploy the model in a way that suits your requirements.
-1. Prepare Environment – For our model, we use Google Collab as IDE.
-2. Load the datasets – Import the necessary libraries and load the datasets that have been downloaded and read it using pd.read_excel(file_path).
+1. Prepare Environment – For our model, we use Google Collab as IDE. ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy1.png)
+2. Load the datasets – Import the necessary libraries and load the datasets that have been downloaded and read it using pd.read_excel(file_path). ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy2.png)
 3. Data Preparation
-	1. Drop unwanted columns 
-	2. Feature Selection
-4. Define hyperparameter for search over to increase the model accuracy
-5. Split the data – Split the dataset into training and testing data using the train_test_split() function from the scikit-learn library.
-6. Train the model – Create an instance of the DecisionTreeClassifier class from the scikit-learn library and fit the training data to the model using the fit() function. 
-7. Test the model – Test the trained model on the testing data using the predict() function and evaluate the model's performance using metrics such as accuracy, precision, recall, and F1-score.
-Result : 
+	1. Drop unwanted columns ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy3i.png)
+	2. Feature Selection ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy3ii.png)
+4. Define hyperparameter for search over to increase the model accuracy ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy4.png)
+5. Split the data – Split the dataset into training and testing data using the train_test_split() function from the scikit-learn library. ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy5i.png) ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy5ii.png)
+
+6. Train the model – Create an instance of the DecisionTreeClassifier class from the scikit-learn library and fit the training data to the model using the fit() function. ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy6.png)
+7. Test the model – Test the trained model on the testing data using the predict() function and evaluate the model's performance using metrics such as accuracy, precision, recall, and F1-score. ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy7.png)
+Result : ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deployresult.png)
 
 ## Used dataset
 Our model used dataset from Mendeley Data named the data of HEXACO personality traits and job search outcomes that you can find it in https://data.mendeley.com/datasets/p9hwfmfcz5/3 . The data size is collected from 773 Vietnamese university undergraduate. The dataset consists of 93 columns, each representing a different feature. The features are:
@@ -76,7 +77,7 @@ Scale:
 The target variable is Offer1-Offer2, indicating whether or not the applicant was offered a job. The decision tree classifier will use the other 92 features to predict whether or not an applicant will be offered a job based on their personality, education, experience, and age
 
 ## Data Preparation
-The dataset then being checked for any null or wrong format cell. 
+The dataset then being checked for any null or wrong format cell. ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/dataprep.png)
  
 Figure above shows the data is complete, no null value, every cell is in integer value, and after thorough data view by researchers every cell holds a value that are in scale of the description from data collector.
 
