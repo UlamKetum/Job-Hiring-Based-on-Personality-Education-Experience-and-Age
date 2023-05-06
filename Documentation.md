@@ -38,14 +38,19 @@ To deploy the Decision Tree Classifier model for job hiring based on personality
 3. Data Preparation
 	1. Drop unwanted columns ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy3i.png)
 	2. Feature Selection
+
 ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy3ii.png)
 4. Define hyperparameter for search over to increase the model accuracy ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy4.png)
 5. Split the data – Split the dataset into training and testing data using the train_test_split() function from the scikit-learn library. 
-![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy5i.png) ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy5ii.png)
+
+![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy5i.png) 
+
+![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy5ii.png)
 
 6. Train the model – Create an instance of the DecisionTreeClassifier class from the scikit-learn library and fit the training data to the model using the fit() function. ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy6.png)
 7. Test the model – Test the trained model on the testing data using the predict() function and evaluate the model's performance using metrics such as accuracy, precision, recall, and F1-score. ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deploy7.png)
 Result :
+
 ![alt text](https://github.com/UlamKetum/Job-Hiring-Based-on-Personality-Education-Experience-and-Age/blob/main/content/deployresult.png)
 
 ## Used dataset
