@@ -33,8 +33,8 @@ To deploy the Decision Tree Classifier model for job hiring based on personality
 1.	Prepare Environment – For our model, we use Google Collab as IDE.
 2.	Load the datasets – Import the necessary libraries and load the datasets that have been downloaded and read it using pd.read_excel(file_path).
 3.	Data Preparation
---1.	Drop unwanted columns 
---2.	Feature Selection
+	1.	Drop unwanted columns 
+	2.	Feature Selection
 4.	Define hyperparameter for search over to increase the model accuracy
 5.	Split the data – Split the dataset into training and testing data using the train_test_split() function from the scikit-learn library.
 6.	Train the model – Create an instance of the DecisionTreeClassifier class from the scikit-learn library and fit the training data to the model using the fit() function. 
