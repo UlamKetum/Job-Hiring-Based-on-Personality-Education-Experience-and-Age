@@ -77,7 +77,8 @@ The target variable is Offer1-Offer2, indicating whether or not the applicant wa
 The dataset then being checked for any null or wrong format cell. 
  
 Figure above shows the data is complete, no null value, every cell is in integer value, and after thorough data view by researchers every cell holds a value that are in scale of the description from data collector.
-	Researchers then find the average or mean for each category of personality and change and new columns for average of each category in the dataset. The new column are such.
+
+Researchers then find the average or mean for each category of personality and change and new columns for average of each category in the dataset. The new column are such.
 1) Ahonesty: Average of Honesty1-Honesty10
 2) Aemotion: Average of Emotion1-Emotion8
 3) Aextravert: Average of Extravert2-Extravert10
@@ -99,13 +100,20 @@ Google collab as our IDE in running model
 
 ## Programming Language
 Python.
-Why we use Python than others?. 
+
+Why we use Python than others?.
+
 First off, Python is a very flexible language with a vast selection of modules and frameworks made expressly for AI and machine learning development. For instance, widely used frameworks like TensorFlow, PyTorch, and Keras make it simple to create and train sophisticated neural networks, while libraries like NumPy, Pandas, and SciPy offer strong data processing and manipulation capabilities.
+
 Additionally, Python has robust support for data science and visualisation, both of which are essential for creating powerful AI models. With the use of libraries like Matplotlib and Seaborn, developers can quickly produce visualisations that aid in the comprehension and analysis of data as well as the dissemination of insights to stakeholders.
+
 In conclusion, Python is a well-liked option for building AI models because of its adaptability, simplicity, strong community support, and potent data science and visualisation skills.
 
 ## Conclusion
 In conclusion, employers trying to find the best applicants for their companies can benefit from using an AI model for recruiting jobs based on personality, education, experience, and age. This AI model can rapidly and correctly assess a huge pool of candidates and make data-driven judgements about who to invite for interviews or offer employment openings by utilising the most recent developments in machine learning and natural language processing.
+
 Additionally, the AI model makes sure that the recruiting procedure is impartial and fair by evaluating each candidate according to objective standards. This ensures that candidates are only assessed based on their qualifications and appropriateness for the position, helping to avoid unconscious prejudices.
+
 Due to its adaptability, simplicity, strong community support, and potent data science and visualisation capabilities, Python is one of the most widely used programming languages for developing AI models. Python enables developers to quickly prototype and experiment with new models while having easy access to a large choice of libraries and frameworks created expressly for machine learning and AI development.
+
 Generally speaking, an AI model for recruiting based on personality, education, experience, and age is a useful tool for both employers and job seekers alike, aiding in streamlining the hiring process, removing prejudice, and identifying the best applicant for the position.
