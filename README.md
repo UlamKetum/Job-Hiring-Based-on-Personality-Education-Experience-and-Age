@@ -47,7 +47,7 @@ Before the project delves into the dataset and the model, we begin our research 
 
 5. "Why Agreeableness is Key to Building a Positive Workplace Culture": This article from Psychology Today explains why agreeableness is an essential characteristic for employees and how it can impact teamwork, communication, and morale. It also provides tips on how to hire agreeable employees and how to foster a culture of agreeableness in the workplace. Link: https://www.psychologytoday.com/us/blog/brain-babble/201511/why-agreeableness-is-key-building-positive-workplace-culture
 
-## 5 Major Tenets For Succesfull Interview
+## 5 Major Tenets For Successful Interview
 
 Interview: The interview process is an opportunity for employers to assess a candidate's communication skills, professionalism, and overall fit for the role and company culture. A successful interview can demonstrate that the candidate has the necessary skills and experience to succeed in the role, as well as a positive attitude and a willingness to learn.
 
