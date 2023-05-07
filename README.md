@@ -146,12 +146,13 @@ In conclusion, Python is a well-liked option for building AI models because of i
 
 ## Result Analysis
 
+# Permutation Importance
 ![image](https://user-images.githubusercontent.com/121605773/236683394-b1bd9a76-b8b7-4b6b-a16d-338523c49feb.png)
 
-
+# Feature Selection Ranking
 ![image](https://user-images.githubusercontent.com/121605773/236683405-1a0000c3-a6bf-452c-8db9-40d501a29020.png)
 
-
+# Correlation Matrix
 ![image](https://user-images.githubusercontent.com/121605773/236683421-d13d75aa-eb3e-4a0f-9e1b-c213fb5787e5.png)
 
 
