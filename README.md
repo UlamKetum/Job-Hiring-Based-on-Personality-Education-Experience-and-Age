@@ -149,12 +149,22 @@ In conclusion, Python is a well-liked option for building AI models because of i
 ### Permutation Importance
 ![image](https://user-images.githubusercontent.com/121605773/236683394-b1bd9a76-b8b7-4b6b-a16d-338523c49feb.png)
 
+Permutation Importance is defined as the decrease of model score when a single feature value is randomly shuffled. In essence, all the feature value will determine the outcome to a certain degree whether it is small or large. All features have certain expected ranges value and every feature have relationship value therefore by inputting the value in a single feature in random shuffle will cause the model to be less accurate as the feature become less predictable and less dependable on that feature.
+
+By observing the graph shown above, we can observe that average interview process (Ainterview) has the highest dependency for the model to determine the outcome of the job offer scale followed by average emotion (AEmotion), average honesty (AHonesty) and so on. Later we observe the feature selection ranking and determine whether these 3 features will become the most impactful feature on the dataset. 
+
+
 ### Feature Selection Ranking
 ![image](https://user-images.githubusercontent.com/121605773/236683405-1a0000c3-a6bf-452c-8db9-40d501a29020.png)
+
+Here we can observe the feature ranking from the most importance to least importance. AHonesty, AEmotion, Aopenness, Aproactive and Aagreeable are all tied to being the number one most important feature that will influence the model. This is accurate to the assumption as these five feature are also have some of the permutation importance. This indicate that  these feature value heavily impacted the probability of job offer and should be prioritized by the interviewee to ensure the highest possible job offer probability.
+
+
 
 ### Correlation Matrix
 ![image](https://user-images.githubusercontent.com/121605773/236683421-d13d75aa-eb3e-4a0f-9e1b-c213fb5787e5.png)
 
+Correlation matrix is utilized in the analysis to determine the linear relationship strength between two features by calculating its coefficient value. The value of a positive or higher correlation coefficient value showcases that when the scale of one’s feature increases, then the other feature scale value also increases. However, when we observe the correlation matrix in this graph, the correlation coefficient value barely reached 0.5 percent and the highest correlation coefficient value are between Aagreeable and Aproactive with around 0.4 coefficient value. This indicates that most of the features aren’t strongly dependent on other features to determine the overall trend value. What we can gather is that while on surface, all these features are related to each skillset of interview skills and opinion, they are mostly non-dependent of one another suggesting that there no centralized feature that ties the dataset and feature together but mostly impacted by each individual feature to determine the job offer probability.
 
 ## Conclusion
 In conclusion, employers trying to find the best applicants for their companies can benefit from using an AI model for recruiting jobs based on personality, education, experience, and age. This AI model can rapidly and correctly assess a huge pool of candidates and make data-driven judgements about who to invite for interviews or offer employment openings by utilising the most recent developments in machine learning and natural language processing.
