@@ -144,6 +144,17 @@ Additionally, Python has robust support for data science and visualisation, both
 
 In conclusion, Python is a well-liked option for building AI models because of its adaptability, simplicity, strong community support, and potent data science and visualisation skills.
 
+## Result Analysis
+
+![image](https://user-images.githubusercontent.com/121605773/236683394-b1bd9a76-b8b7-4b6b-a16d-338523c49feb.png)
+
+
+![image](https://user-images.githubusercontent.com/121605773/236683405-1a0000c3-a6bf-452c-8db9-40d501a29020.png)
+
+
+![image](https://user-images.githubusercontent.com/121605773/236683421-d13d75aa-eb3e-4a0f-9e1b-c213fb5787e5.png)
+
+
 ## Conclusion
 In conclusion, employers trying to find the best applicants for their companies can benefit from using an AI model for recruiting jobs based on personality, education, experience, and age. This AI model can rapidly and correctly assess a huge pool of candidates and make data-driven judgements about who to invite for interviews or offer employment openings by utilising the most recent developments in machine learning and natural language processing.
 
