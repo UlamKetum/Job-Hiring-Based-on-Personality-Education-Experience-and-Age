@@ -33,33 +33,6 @@ Our AI model, which was trained to find patterns and correlations between many e
 2) To reduce the time and cost associated with the hiring process by automating the personality testing and job hiring probability prediction process
 3) To minimize the bias and inconsistencies in job recruitment process by using objectives measure of personality traits and characteristics.
 
-## Background Research
-
-Before the project delves into the dataset and the model, we begin our research by highlighting and investigating all the necessary components toward a successful interview as it led to a higher chance of getting a job offer. We scoured the internet and found 5 major tenets of successful interview which are interview preparation, honesty, openness, comfortability during the interview and agreeableness. These are the results of our preliminary research. 
-
-1. "The Art of the Interview: 6 Tips to Help You Impress Your Next Employer": This article from Forbes provides tips on how to ace the interview process, including how to prepare beforehand, how to dress, and how to answer common interview questions. Link: https://www.forbes.com/sites/ashleystahl/2019/06/26/the-art-of-the-interview-6-tips-to-help-you-impress-your-next-employer/
-
-2. "Why Honesty is Essential in the Workplace": This article from Business News Daily explains why honesty is a critical characteristic for employees and how it can impact a company's success. It also provides tips on how to cultivate honesty in the workplace. Link: https://www.businessnewsdaily.com/6549-honesty-workplace.html
-
-3. "The Importance of Openness in the Workplace": This article from Harvard Business Review explores the benefits of creating a culture of openness in the workplace, including increased collaboration and innovation. It also provides tips on how to encourage openness among employees. Link: https://hbr.org/2018/09/the-importance-of-openness-in-the-workplace
-
-4. "The Benefits of Comfortable Employees": This article from Inc. Magazine discusses the importance of employee comfort in the workplace and how it can impact productivity and morale. It also provides tips on how to create a comfortable work environment. Link: https://www.inc.com/john-rampton/the-benefits-of-comfortable-employees.html
-
-5. "Why Agreeableness is Key to Building a Positive Workplace Culture": This article from Psychology Today explains why agreeableness is an essential characteristic for employees and how it can impact teamwork, communication, and morale. It also provides tips on how to hire agreeable employees and how to foster a culture of agreeableness in the workplace. Link: https://www.psychologytoday.com/us/blog/brain-babble/201511/why-agreeableness-is-key-building-positive-workplace-culture
-
-## 5 Major Tenets For Successful Interview
-
-Interview: The interview process is an opportunity for employers to assess a candidate's communication skills, professionalism, and overall fit for the role and company culture. A successful interview can demonstrate that the candidate has the necessary skills and experience to succeed in the role, as well as a positive attitude and a willingness to learn.
-
-Honesty: Employers value honesty because it is an important component of building trust in the workplace. Honest employees are more likely to take responsibility for their mistakes, communicate openly with their colleagues, and maintain the integrity of the company's policies and procedures.
-
-Openness: Openness refers to a willingness to consider different perspectives and ideas. Employees who are open to feedback and new approaches are more likely to be adaptable and innovative, which can help the company stay competitive in a rapidly changing marketplace.
-
-Comfort: Employers want employees who are comfortable in their role and can manage stress effectively. When employees feel comfortable, they are more likely to be productive, engaged, and committed to their work.
-
-Agreeableness: Agreeable employees are easy to work with and get along well with their colleagues. They are more likely to collaborate effectively, resolve conflicts constructively, and contribute to a positive workplace culture.
-
-
 ## How to Deploy Model
 To deploy the Decision Tree Classifier model for job hiring based on personality, education, experience, and age, you will need to prepare the environment, load the dataset, split the data, train the model, test the model, save the model, and deploy the model in a way that suits your requirements.
 1. Prepare Environment – For our model, we use Google Collab as IDE. 
@@ -192,6 +165,13 @@ Here we can observe the feature ranking from the most importance to least import
 ![image](https://user-images.githubusercontent.com/121605773/236683421-d13d75aa-eb3e-4a0f-9e1b-c213fb5787e5.png)
 
 Correlation matrix is utilized in the analysis to determine the linear relationship strength between two features by calculating its coefficient value. The value of a positive or higher correlation coefficient value showcases that when the scale of one’s feature increases, then the other feature scale value also increases. However, when we observe the correlation matrix in this graph, the correlation coefficient value barely reached 0.5 percent and the highest correlation coefficient value are between Aagreeable and Aproactive with around 0.4 coefficient value. This indicates that most of the features aren’t strongly dependent on other features to determine the overall trend value. What we can gather is that while on surface, all these features are related to each skillset of interview skills and opinion, they are mostly non-dependent of one another suggesting that there no centralized feature that ties the dataset and feature together but mostly impacted by each individual feature to determine the job offer probability.
+
+ ![image](https://user-images.githubusercontent.com/121605773/236687727-8a8510b6-f9af-4b4a-a568-ae202e6246bd.png)                                            ![image](https://user-images.githubusercontent.com/121605773/236687741-cbb31142-19c8-44a6-bced-4014892f666d.png)
+
+
+ AAgreaable against Aproactive                                             AEmotion against AHonesty
+
+These are scatterplot showcasing two features (AAgreaable against Aproactive) with the highest correlation coefficient against the lowest correlation coefficient (AEmotion against AHonesty). We can observe that the highest correlation coefficient scatterplot is more clumped together meanwhile    AEmotion against AHonesty scatterplot are much more spread out. This indicates a trend that AAgreable feature value will have a more significant impact on Aproactive and indicates that bear the highest dependency on one another.                                        
 
 ## Conclusion
 In conclusion, employers trying to find the best applicants for their companies can benefit from using an AI model for recruiting jobs based on personality, education, experience, and age. This AI model can rapidly and correctly assess a huge pool of candidates and make data-driven judgements about who to invite for interviews or offer employment openings by utilising the most recent developments in machine learning and natural language processing.
