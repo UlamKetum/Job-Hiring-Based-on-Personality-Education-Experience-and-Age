@@ -166,10 +166,15 @@ Here we can observe the feature ranking from the most importance to least import
 
 Correlation matrix is utilized in the analysis to determine the linear relationship strength between two features by calculating its coefficient value. The value of a positive or higher correlation coefficient value showcases that when the scale of one’s feature increases, then the other feature scale value also increases. However, when we observe the correlation matrix in this graph, the correlation coefficient value barely reached 0.5 percent and the highest correlation coefficient value are between Aagreeable and Aproactive with around 0.4 coefficient value. This indicates that most of the features aren’t strongly dependent on other features to determine the overall trend value. What we can gather is that while on surface, all these features are related to each skillset of interview skills and opinion, they are mostly non-dependent of one another suggesting that there no centralized feature that ties the dataset and feature together but mostly impacted by each individual feature to determine the job offer probability.
 
- ![image](https://user-images.githubusercontent.com/121605773/236687727-8a8510b6-f9af-4b4a-a568-ae202e6246bd.png)                                            ![image](https://user-images.githubusercontent.com/121605773/236687741-cbb31142-19c8-44a6-bced-4014892f666d.png)
+### ScatterPlot Comparison
 
+![image](https://user-images.githubusercontent.com/121605773/236687867-05110e32-eaa1-4bfc-b8ac-afec1b4815d8.png)
+ 
+AAgreaable against Aproactive                                                                                              
+ 
+ ![image](https://user-images.githubusercontent.com/121605773/236687876-18b80ee0-42c8-4bf7-9d74-6618009391e7.png)
 
- AAgreaable against Aproactive                                             AEmotion against AHonesty
+AEmotion against AHonesty
 
 These are scatterplot showcasing two features (AAgreaable against Aproactive) with the highest correlation coefficient against the lowest correlation coefficient (AEmotion against AHonesty). We can observe that the highest correlation coefficient scatterplot is more clumped together meanwhile    AEmotion against AHonesty scatterplot are much more spread out. This indicates a trend that AAgreable feature value will have a more significant impact on Aproactive and indicates that bear the highest dependency on one another.                                        
 
